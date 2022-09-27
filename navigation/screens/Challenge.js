@@ -1,17 +1,24 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-//import {useState, useEffect} from 'react';
-//import Swiper from 'react-native-swiper';
-//import BannerSection from '.';
-//import {SliderBox} from 'react-native-image-slider-box';
+import {View, Text, StyleSheet} from 'react-native';
+
+// screens
+import BannerSection from './components/BannerSection';
 
 export default function Challenge({navigation}){
-  return(
-    <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
-      <Text style={{fontSize:20, fontWeight:'bold'}}>배너자리</Text>
-      <Text style={{fontSize:20, fontWeight:'bold'}}>진행중인 챌린지</Text>
-      <Text style={{fontSize:20, fontWeight:'bold'}}>진행 예정 챌린지</Text>
-      <Text style={{fontSize:20, fontWeight:'bold'}}>종료한 챌린지</Text>
-    </View>
-  );
+
+  <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+    <BannerSection style={styles.container}/>
+    <Text style={{fontSize:20, fontWeight:'bold'}}>진행중인 챌린지</Text>
+    <Upcoming style={{height:200}}/>
+    <Ended style={{height:200}}/>
+  </View>
+
 }
+
+const styles=StyleSheet.create({
+  container:{
+    width:'100%',
+    alignItems:'center',
+    height:80
+  }
+});
