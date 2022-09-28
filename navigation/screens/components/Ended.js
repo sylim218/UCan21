@@ -12,7 +12,7 @@ function Ended ({navigation}){
   </View>
 }
 
-export default Upcoming;
+export default Ended;
 
 const styles=StyleSheet.create({
   text : {

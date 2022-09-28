@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {View, Image, Text, StyleSheet, Button} from 'react-native';
 
-export default function UpcomingList({naviagation}){
+export default function UpcomingList({navigation}){
 
-  return (
-    <View style={style.container}>
+    <View>
       <Text>진행 예정 챌린지</Text>
     </View>
-  )
+
 }

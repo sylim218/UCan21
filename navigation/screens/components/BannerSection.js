@@ -31,6 +31,7 @@ function BannerSection(){
 
         <Swiper
           style={styles.wrapper}
+          height={80}
           dot={
             <View
               style={{
